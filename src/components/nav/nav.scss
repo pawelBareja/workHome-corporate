@@ -1,0 +1,180 @@
+@import "../../colors.scss";
+
+.navigation {
+  z-index: 10;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 60px;
+  margin: 0 auto;
+  padding: 0 20px;
+  background-color: $secondary;
+  box-shadow: 0 3px 10px 0 rgba(93, 110, 139, 0.2);
+  transition: 1s;
+  .logo {
+    padding: 0 10px;
+  }
+}
+
+.navbar-toggler {
+  border: none;
+  padding-top: 0;
+  margin-top: -15px;
+}
+
+.navbar-toggler:after {
+  position: absolute;
+  right: 15px;
+  content: "menu";
+  color: #414141;
+  top: 35px;
+  font-size: 12px;
+  letter-spacing: 2px;
+  font-weight: 300;
+}
+
+.navbar-brand img {
+  max-height: 50px;
+  width: auto;
+}
+
+.link__toogle {
+  color: #414141;
+  font-weight: 300;
+  font-size: 16px;
+  padding: 5px 30px;
+  text-transform: uppercase;
+  height: 60px;
+  line-height: 60px;
+  letter-spacing: 2px;
+  cursor: pointer;
+  margin-bottom: 0;
+}
+
+.dropdown img {
+  padding-bottom: 3px;
+}
+
+@media (min-width: 992px) {
+  .navbar-expand-lg .navbar {
+    justify-content: flex-end;
+  }
+}
+
+.navbar {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 0 50px;
+  @media (max-width: 992px) {
+    z-index: 100;
+    position: fixed;
+    top: 60px;
+    right: -150vw;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(255, 255, 255, 0.9);
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    transition: ease-in-out 0.5s;
+  }
+  .nav--link {
+    padding: 0 20px;
+    text-decoration: none;
+  }
+
+  .nav--link-custom {
+    background: $accent-primary;
+    border: 1px solid $accent-primary;
+    color: #fff;
+    border-radius: 3px;
+    padding: 10px;
+  }
+}
+.navbar--active {
+  z-index: 100;
+  position: fixed;
+  top: 60px;
+  right: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(255, 255, 255, 0.9);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+}
+.dropdown {
+  display: none;
+}
+
+.navbar-light .navbar .nav--link {
+  position: relative;
+  color: #414141;
+  font-weight: 300;
+  font-size: 16px;
+  padding: 0 5px;
+  margin: 0 20px;
+  text-transform: uppercase;
+  height: 60px;
+  line-height: 60px;
+  letter-spacing: 2px;
+}
+
+.activeLink {
+  border-bottom: 2px solid #4e96f8;
+}
+
+/*
+  ##################
+  submenu
+  ##################
+  */
+
+/* #link__hover:hover .submenu {
+    display: block;
+  } */
+
+.burgerMenu {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  font-size: 14px;
+  line-height: 1;
+  padding-bottom: 7px;
+  cursor: pointer;
+}
+
+.burgerMenu img {
+  height: 35px;
+  width: auto;
+}
+
+@media (min-width: 992px) {
+  .burgerMenu {
+    display: none;
+  }
+}
+
+/* nawigacja sticky  */
+
+.hide {
+  transform: translateY(-60px);
+}
+
+// nav {
+/* width: 100%;
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0px 1.0875rem;
+    font-size: 16px;
+    font-weight: 600; */
+// }

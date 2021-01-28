@@ -1,0 +1,82 @@
+@import "../../colors.scss";
+.jumbotron {
+  position: relative;
+  padding: 0;
+  margin: 0;
+  // height: 50vh;
+  max-height: 1000px;
+  border-radius: 0;
+  padding: 0;
+  margin: 0;
+  //   color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  overflow: hidden;
+  // background: #efefef;
+}
+
+.jumbotron__text {
+  height: 100%;
+  // border: 1px solid red;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: relative;
+  padding: 100px 0 20px;
+  width: 100%;
+  max-width: 1500px;
+  margin: 60px auto 0;
+  h1 {
+    -webkit-text-stroke: 2px $accent-primary;
+    -webkit-text-fill-color: $secondary;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin: 10px 0 100px;
+  }
+  span {
+    font-size: 3.2rem;
+    font-weight: 200;
+    color: $accent-primary;
+  }
+}
+
+// }
+
+// .jumbotron__text h1 span {
+//   font-weight: 400;
+//   line-height: 1.2;
+// }
+
+// .jumbotron__text p {
+//   font-size: 24px;
+// }
+// @media (min-width: 993px) {
+//   .jumbotron__text p {
+//     font-size: 30px;
+//     font-weight: 300;
+//   }
+// }
+
+// @media (max-width: 992px) {
+//   .jumbotron__text h1 {
+//     font-size: 40px;
+//   }
+// }
+
+// @media (max-width: 500px) {
+//   .jumbotron__text h1 {
+//     font-size: 26px;
+//   }
+// }
+
+@media (max-width: 992px) {
+  .jumbotron__text {
+    text-align: left;
+  }
+}
+
+// .jumbotron__text h1 {
+//   letter-spacing: 1px;
+//   margin-bottom: 40px;
+// }

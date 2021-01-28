@@ -1,0 +1,64 @@
+@import "./colors.scss";
+
+html {
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  box-sizing: border-box;
+  overflow-y: scroll;
+}
+body {
+  margin: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: hsla(0, 0%, 0%, 0.8);
+  color: $color-text;
+  background-color: $secondary;
+  font-family: "Poppins", sans-serif;
+  font-weight: normal;
+  word-wrap: break-word;
+  font-kerning: normal;
+  line-height: 1.2;
+  text-align: left;
+  -moz-font-feature-settings: "kern", "liga", "clig", "calt";
+  -ms-font-feature-settings: "kern", "liga", "clig", "calt";
+  -webkit-font-feature-settings: "kern", "liga", "clig", "calt";
+  font-feature-settings: "kern", "liga", "clig", "calt";
+
+  h1 {
+    font-size: 3.375rem;
+    font-weight: 900;
+    -webkit-letter-spacing: -0.015em;
+    -moz-letter-spacing: -0.015em;
+    -ms-letter-spacing: -0.015em;
+    letter-spacing: -0.015em;
+    color: $accent-primary;
+    line-height: 1.1;
+  }
+
+  h2 {
+    font-size: 1rem;
+    line-height: 1.6;
+    font-weight: 400;
+  }
+
+  h3 {
+    font-size: 3.375rem;
+    font-weight: 900;
+    -webkit-letter-spacing: -0.015em;
+    -moz-letter-spacing: -0.015em;
+    -ms-letter-spacing: -0.015em;
+    letter-spacing: -0.015em;
+    color: $accent-primary;
+    line-height: 1.1;
+  }
+
+  a {
+    color: $color-text;
+    text-decoration: none;
+  }
+  .main {
+    max-width: 1500px;
+    padding: 0 30px;
+    margin: 0 auto;
+  }
+}
