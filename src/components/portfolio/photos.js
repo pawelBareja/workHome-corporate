@@ -12,59 +12,70 @@ import photo11 from "../../assets/images/photos/11.jpg"
 import photo12 from "../../assets/images/photos/12.jpg"
 import photo13 from "../../assets/images/photos/13.jpg"
 
-// const photos = [
-//   {
-//     src: photo1,
-
-//   },
-//   {
-//     photo: photo2,
-
-//   },
-//   {
-//     photo: photo3,
-
-//   },
-//   {
-//     photo: photo4,
-
-//   },
-//   {
-
-//     photo: photo5,
-//   },
-//   {
-//
-//     photo: photo6,
-//   },
-//   {
-
-//     photo: photo7,
-//   },
-//   {
-//
-//     photo: photo8,
-//   },
-//   {
-//
-//     photo: photo9,
-//   },
-//   {
-//
-//     photo: photo10,
-//   },
-//   {
-
-//     photo: photo11,
-//   },
-//   {
-
-//     photo: photo12,
-//   },
-//   {
-
-//     photo: photo13,
-//   },
-// ]
-
-// export default photos
+export const photos = [
+  {
+    src: photo1,
+    width: 3,
+    height: 2,
+  },
+  {
+    src: photo2,
+    width: 3,
+    height: 2,
+  },
+  {
+    src: photo3,
+    width: 3,
+    height: 2,
+  },
+  {
+    src: photo4,
+    width: 3,
+    height: 2,
+  },
+  {
+    src: photo5,
+    width: 3,
+    height: 2,
+  },
+  {
+    src: photo6,
+    width: 2,
+    height: 3,
+  },
+  {
+    src: photo7,
+    width: 3,
+    height: 2,
+  },
+  {
+    src: photo8,
+    width: 3,
+    height: 2,
+  },
+  {
+    src: photo9,
+    width: 3,
+    height: 2,
+  },
+  {
+    src: photo10,
+    width: 3,
+    height: 2,
+  },
+  {
+    src: photo11,
+    width: 2,
+    height: 3,
+  },
+  {
+    src: photo12,
+    width: 3,
+    height: 2,
+  },
+  {
+    src: photo13,
+    width: 3,
+    height: 2,
+  },
+]

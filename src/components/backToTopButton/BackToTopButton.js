@@ -10,7 +10,7 @@ export default class BackToTopButton extends Component {
   }
 
   toggleVisibility() {
-    window.pageYOffset > 200
+    window.pageYOffset > 150
       ? this.setState({
           is_visible: true,
         })
@@ -41,7 +41,7 @@ export default class BackToTopButton extends Component {
         style={{ display: is_visible ? "block" : "none" }}
         onClick={() => this.scrollToTop()}
       >
-        <p>up</p>
+        <p>Do góry</p>
       </div>
     )
   }

@@ -2,21 +2,22 @@ import React from "react"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import Header from "../components/header/Header"
-import Galeria from "../components/portfolio/Galeria"
+
 import Title from "../components/title/Title"
 import Cards from "../components/cards/Cards"
+import Portfolio from "../components/portfolio/Portfolio"
 
 const IndexPage = () => (
   <Layout>
     <SEO title="Home" />
-    <div class="main">
+    <div className="main">
       <Header />
-
-      {/* <Galeria /> */}
-
-      <Cards />
-
-      <Title text={"O nas"} />
+      <section id="benefits">
+        <Cards />
+      </section>
+      <section id="about">
+        <Title text={"O nas"} />
+      </section>
       <p>
         Worker Home jest firmą oferującą kwatery pracownicze o podwyższonym
         standardzie i konkurencyjnej cenie. Naszym celem jest podniesienie
@@ -29,20 +30,10 @@ const IndexPage = () => (
         wiemy co jest najważniejsze zarówno dla agencji jak i samych
         mieszkańców.{" "}
       </p>
-      <Title text={"Co nas"} background={"wyróżnia"} />
-
-      <p>
-        1. Dogodna lokalizacja – miejsca wybrane pod kątem wygody zaopatrzenia
-        najemców jak i logistyki dojazdu do pracy 2. Standard lokali – nowe
-        ergonomiczne meble, Internet światłowodowy czy lodówki w pokojach to
-        tylko niektóre z naszych standardów. 3. Automatyka i nowoczesność – tam
-        gdzie to możliwe stawiamy na automatyzacje procesów związanych z
-        mediami, czy obsługą – to pewność utrzymania jakości usługi dla naszych
-        klientów. 4. Wsparcie serwisowe w okresie najmu obiektów. 5. Uczciwe i
-        transparentne umowy najmu dzięki którym obie strony transakcji czują się
-        bezpiecznie i komfortowo.
-      </p>
-      <h2>Kontakt</h2>
+      <section id="gallery">
+        <Title text={"Galeria"} />
+      </section>
+      <Portfolio />
     </div>
   </Layout>
 )

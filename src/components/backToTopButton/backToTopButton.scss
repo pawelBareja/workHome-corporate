@@ -1,13 +1,26 @@
+@import "../../colors.scss";
+
 .scrollTopButton {
   position: fixed;
-  bottom: 20px;
-  right: 3px;
+  bottom: 30px;
+  right: -15px;
   animation: fadeIn 300ms ease-in-out 1s both;
   cursor: pointer;
   border: none;
-  background: #858585;
-  padding: 5px;
-  border-radius: 4px;
+  // background: #858585;
+  // padding: 5px;
+  // border-radius: 4px;
+  color: $accent-primary;
+  transform: rotate(-90deg);
+  :after {
+    content: "";
+    position: absolute;
+    top: 25px;
+    left: 75px;
+    width: 50px;
+    height: 2px;
+    background-color: $accent-primary;
+  }
 }
 
 @keyframes fadeIn {

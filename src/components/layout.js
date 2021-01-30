@@ -27,11 +27,23 @@ const Layout = ({ children }) => {
     <>
       <Nav />
       <main>{children}</main>
-      <footer>
-        © {new Date().getFullYear()}, handmade by
-        {` `}
-        <a href="https://www.barejastudio.pl">barejastudio.pl</a>
-      </footer>
+      <section id="contact">
+        <footer className="footer">
+          <h1>WorkHOME</h1>
+          <p>Workhome sp z o o</p>
+          <p>
+            <span>Telefon:</span>+48 57 333 35
+          </p>
+          <p>
+            <span>Email:</span>dfghjkjhgfddfgh
+          </p>
+          <div className="copyright">
+            © {new Date().getFullYear()}{" "}
+            <a href="https://www.barejastudio.pl">barejastudio.pl</a>
+          </div>
+        </footer>
+      </section>
+
       <BackToTopButton />
       <ProgressBar />
     </>

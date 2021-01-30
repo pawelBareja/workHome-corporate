@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react"
-import { Link } from "gatsby"
+// import { Link } from "gatsby"
+import { AnchorLink } from "gatsby-plugin-anchor-links"
 
 // css
 import "./nav.scss"
@@ -56,27 +57,38 @@ const Nav = () => {
   return (
     <div className={menu ? "navigation" : "navigation hide"}>
       <div className="logo" href="/">
-        <span>LOGOtext</span>
+        <span>LOGO</span>
       </div>
       <span className="burgerMenu" onClick={toggleMobileMenu}>
         <img src={burgerDark} alt="burger menu" />
         <span>menu</span>
       </span>
       <div className={mobileMenu ? "navbar--active" : "navbar"}>
-        <Link to="#" className="nav--link" activeClassName="activeLink">
-          O nas
-        </Link>
+        <AnchorLink
+          to="/#benefits"
+          className="nav--link"
+          activeClassName="activeLink"
+        >
+          Co nas wyróżnia
+        </AnchorLink>
 
-        <Link className="nav--link" to="#contact" activeClassName="activeLink">
-          Kariera
-        </Link>
-        <Link
+        <AnchorLink to="/#about" className="stripped" stripHash>
+          O nas
+        </AnchorLink>
+        <AnchorLink
+          className="nav--link"
+          to="/#gallery"
+          activeClassName="activeLink"
+        >
+          Galeria
+        </AnchorLink>
+        <AnchorLink
           className="nav--link nav--link-custom"
-          to="/"
+          to="/#contact"
           activeClassName="activeLink"
         >
           Kontakt
-        </Link>
+        </AnchorLink>
       </div>
     </div>
   )
