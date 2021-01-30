@@ -10,7 +10,6 @@ body {
   margin: 0;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  color: hsla(0, 0%, 0%, 0.8);
   color: $color-text;
   background-color: $secondary;
   font-family: "Poppins", sans-serif;
@@ -24,6 +23,10 @@ body {
   -webkit-font-feature-settings: "kern", "liga", "clig", "calt";
   font-feature-settings: "kern", "liga", "clig", "calt";
 
+  button:focus {
+    outline: none !important;
+  }
+
   h1 {
     font-size: 3.375rem;
     font-weight: 900;
@@ -36,9 +39,10 @@ body {
   }
 
   h2 {
-    font-size: 1rem;
+    font-size: 1.5rem;
     line-height: 1.6;
     font-weight: 400;
+    color: $accent-primary;
   }
 
   h3 {
@@ -67,6 +71,11 @@ body {
     margin: 1rem 0;
   }
 
+  p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: $color-text;
+  }
   a {
     color: $color-text;
     text-decoration: none;
