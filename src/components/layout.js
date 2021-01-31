@@ -29,7 +29,7 @@ const Layout = ({ children }) => {
       <main>{children}</main>
       <section id="contact">
         <footer className="footer">
-          <h1>WorkHOME</h1>
+          <h1>LOGO</h1>
           <p>Workhome sp z o o</p>
           <p>
             <span>Telefon:</span>+48 57 333 35

@@ -6,8 +6,9 @@
   margin: 100px auto 20px;
 
   h3 {
-    -webkit-text-stroke: 2px $accent-primary;
-    -webkit-text-fill-color: $secondary;
+    color: $accent-primary;
+    // -webkit-text-stroke: 2px $accent-primary;
+    // -webkit-text-fill-color: $secondary;
     letter-spacing: 2px;
     text-transform: uppercase;
   }

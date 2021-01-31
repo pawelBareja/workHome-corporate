@@ -21,13 +21,13 @@ const bullets = [
     text:
       "Tam gdzie to możliwe stawiamy na automatyzacje procesów związanych z mediami, czy obsługą – to pewność utrzymania jakości usługi dla naszych klientów.",
   },
-
   {
     number: "4",
     title: "Jasne warunki",
     text:
       "Uczciwe i transparentne umowy najmu dzięki którym obie strony transakcji czują się bezpiecznie i komfortowo.",
   },
+
   {
     number: "5",
     title: "Wsparcie serwisowe",
