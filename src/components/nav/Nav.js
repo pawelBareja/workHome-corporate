@@ -7,8 +7,7 @@ import { HamburgerSlider } from "react-animated-burgers"
 import "./nav.scss"
 
 // images
-import logoDark from "../../assets/images/icons/logomain.svg"
-import burgerDark from "../../assets/images/icons/menu3.svg"
+import logo from "../../assets/images/icons/logo.svg"
 
 const Nav = () => {
   const [menu, showMenu] = useState(true)
@@ -42,34 +41,13 @@ const Nav = () => {
     showMobileMenu(prev => !prev)
   }
 
-  // const mouseEnterHandler = () => sethovered(true)
-  // const mouseLeaveHandler = () => {
-  //   sethovered(false)
-  //   setSubmenu(false)
-  // }
-
-  // const onTimeout = () => {
-  //   setSubmenu(true)
-  // }
-
-  // useEffect(() => {
-  //   const timer = hovered && setTimeout(onTimeout, 700)
-  //   return () => {
-  //     clearTimeout(timer)
-  //   }
-  // }, [hovered])
-
   return (
     <div className={menu ? "navigation" : "navigation hide"}>
       <div className="logo" href="/">
-        <span>LOGO</span>
+        <img className="logo" src={logo} alt="logo" />
       </div>
-      {/* <span className="burgerMenu" onClick={toggleMobileMenu}>
-        <img src={burgerDark} alt="burger menu" />
-        <span>menu</span>
-      </span> */}
+
       <HamburgerSlider
-        // buttonColor="#FFBC67"
         barColor={"#444"}
         className="burgerMenu"
         isActive={mobileMenu}

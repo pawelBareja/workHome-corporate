@@ -6,6 +6,8 @@ import "@fontsource/poppins/200.css"
 import "@fontsource/poppins/400.css"
 import "@fontsource/poppins/900.css"
 
+import logo from "../assets/images/icons/logo.svg"
+
 import Nav from "../components/nav/Nav"
 import BackToTopButton from "../components/backToTopButton/BackToTopButton"
 import ProgressBar from "../components/progressBar/ProgressBar"
@@ -29,7 +31,7 @@ const Layout = ({ children }) => {
       <main>{children}</main>
       <section id="contact">
         <footer className="footer">
-          <h1>LOGO</h1>
+          <img className="logo" src={logo} alt="logo" />
           <p>Workhome sp z o o</p>
           <p>
             <span>Telefon:</span>+48 57 333 35
