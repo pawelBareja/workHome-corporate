@@ -6,6 +6,7 @@ import Header from "../components/header/Header"
 import Title from "../components/title/Title"
 import Cards from "../components/cards/Cards"
 import Portfolio from "../components/portfolio/Portfolio"
+import Form from "../components/form/Form"
 
 const IndexPage = () => (
   <Layout>
@@ -34,6 +35,9 @@ const IndexPage = () => (
         <Title text={"Galeria"} />
       </section>
       <Portfolio />
+      <section>
+        <Form />
+      </section>
     </div>
   </Layout>
 )
