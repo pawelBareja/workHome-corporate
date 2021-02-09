@@ -1,7 +1,51 @@
+@import "../../colors.scss";
+
 form {
   width: 100%;
 
-  input {
-    width: 100%;
+  input,
+  textarea {
+    width: 90%;
+    padding: 10px 20px;
+    margin: 10px auto;
+    background: none;
+    border: none;
+    border: 1px solid $accent-primary;
+    border-radius: 5px;
+    font-size: 14px;
+    line-height: 1.6;
+    color: #444;
+    font-weight: 300;
+  }
+
+  // ::-webkit-input-placeholder {
+  //   // font-size: 1.1rem;
+  //   // line-height: 1.6;
+  //   // color: #444;
+  //   // font-weight: 300;
+  // }
+
+  button {
+    cursor: pointer;
+    margin: 10px auto;
+    width: 300px;
+    border: 2px solid $accent-primary;
+    background-color: $accent-primary;
+    color: #fff;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 1.1rem;
+    box-shadow: 3px 10px 10px 0px rgba(93, 110, 139, 0.4);
+    transition: 0.7s;
+    &:hover {
+      box-shadow: 0 15px 30px 0 rgba(38, 59, 94, 0.4);
+    }
+    @media (max-width: 500px) {
+      width: 100%;
+    }
+  }
+
+  .errorMsg {
+    color: red;
   }
 }

@@ -7,6 +7,7 @@ import Title from "../components/title/Title"
 import Cards from "../components/cards/Cards"
 import Portfolio from "../components/portfolio/Portfolio"
 import Form from "../components/form/Form"
+import Cookies from "../components/cookies/Cookies"
 
 const IndexPage = () => (
   <Layout>
@@ -39,6 +40,7 @@ const IndexPage = () => (
         <Form />
       </section>
     </div>
+    <Cookies />
   </Layout>
 )
 

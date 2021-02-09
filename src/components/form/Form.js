@@ -38,7 +38,8 @@ export default () => {
   }
   return (
     <div>
-      <h1>Contact Us</h1>
+      <h3>Napisz do nas</h3>
+      <p>Odpowiemy najszybciej jak to możliwe</p>
       <Formik
         initialValues={{ email: "", message: "" }}
         onSubmit={handleOnSubmit}
@@ -46,14 +47,19 @@ export default () => {
       >
         {({ isSubmitting }) => (
           <Form id="fs-frm" noValidate>
-            <label htmlFor="email">Email:</label>
-            <Field id="email" type="email" name="email" />
+            {/* <label htmlFor="email">Email:</label> */}
+            <Field id="email" type="email" name="email" placeholder="E-mail" />
             <ErrorMessage name="email" className="errorMsg" component="p" />
-            <label htmlFor="message">Message:</label>
-            <Field id="message" name="message" component="textarea" />
+            {/* <label htmlFor="message">Wiadomość:</label> */}
+            <Field
+              id="message"
+              name="message"
+              component="textarea"
+              placeholder="Tu wpisz swoją wiadomość"
+            />
             <ErrorMessage name="message" className="errorMsg" component="p" />
             <button type="submit" disabled={isSubmitting}>
-              Submit
+              Wyślij
             </button>
             {serverState && (
               <p className={!serverState.ok ? "errorMsg" : ""}>
