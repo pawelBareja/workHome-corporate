@@ -1,6 +1,6 @@
 import React, { Component } from "react"
 import TextLoop from "react-text-loop"
-import photo from "../../assets/images/photos/pracownik.png"
+import photo from "../../assets/images/photos/new.png"
 
 import "./header.scss"
 
@@ -9,7 +9,7 @@ class Header extends Component {
     return (
       <>
         <div className="jumbotron">
-          <img src={photo} alt={"pracownik"} />
+          <img src={photo} alt={"pracownicy"} />
           <div className="jumbotron__text">
             <div>
               <TextLoop
@@ -18,7 +18,10 @@ class Header extends Component {
                 <span> Pracuj!</span>
                 <span>Mieszkaj!</span>
               </TextLoop>
-              <h1>Kwatery Pracownicze</h1>
+              <h1>
+                Profesjonalne <br />
+                kwatery pracownicze
+              </h1>
             </div>
             <h2>
               Kwatery pracownicze o podwyższonym <br /> standardzie, w

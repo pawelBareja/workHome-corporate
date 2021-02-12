@@ -19,11 +19,17 @@
     position: absolute;
     right: 100px;
     bottom: 0;
-    width: 280px;
-    height: auto;
+    height: 400px;
+    width: auto;
+
     @media (max-width: 900px) {
-      right: 0;
       opacity: 0.5;
+      right: 0;
+    }
+
+    @media (max-width: 600px) {
+      width: 100%;
+      height: auto;
     }
   }
 }

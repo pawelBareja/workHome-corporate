@@ -37,6 +37,7 @@ body {
     letter-spacing: -0.015em;
     color: $accent-primary;
     line-height: 1.1;
+    text-shadow: 1px 1px 1px #000;
   }
 
   h2 {
@@ -44,6 +45,7 @@ body {
     line-height: 1.6;
     font-weight: 900;
     color: $accent-primary;
+    text-shadow: 1px 1px 1px #fff;
     // letter-spacing: 2px;
     // -webkit-text-stroke: 1px #fff;
   }

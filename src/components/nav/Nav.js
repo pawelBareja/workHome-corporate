@@ -71,6 +71,16 @@ const Nav = () => {
         >
           O nas
         </AnchorLink>
+
+        <AnchorLink
+          to="/#cooperation"
+          className="nav--link"
+          activeClassName="activeLink"
+          onAnchorLinkClick={() => showMobileMenu(false)}
+        >
+          Współpraca
+        </AnchorLink>
+
         <AnchorLink
           className="nav--link"
           to="/#gallery"

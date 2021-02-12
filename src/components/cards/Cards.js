@@ -30,7 +30,7 @@ const bullets = [
 
   {
     number: "5",
-    title: "Wsparcie serwisowe",
+    title: "Wsparcie",
     text: "Wsparcie serwisowe w okresie najmu obiektów.",
   },
 ]
